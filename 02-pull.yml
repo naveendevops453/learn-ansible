@@ -1,0 +1,6 @@
+- name: Pull Playbook
+  hosts: localhost
+  tasks:
+    - name: Print Hello
+      ansible.builtin.debug:
+        mes: Hello
