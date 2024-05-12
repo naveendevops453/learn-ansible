@@ -2,6 +2,8 @@
   hosts: localhost
   vars:
     URL: play.example.com
+  vars_files:
+    - vars.yml
   tasks:
     - name: Print URL
       ansible.builtin.debug:
@@ -12,3 +14,7 @@
         msg: FRUIT - {{ FRUIT }}
       vars:
         FRUIT: apple
+
+    - name: Print PROJECT Name
+      ansible.builtin.debug:
+        msg: PROJECT_NAME - {{ PROJECT_NAME }}
