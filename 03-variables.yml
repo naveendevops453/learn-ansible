@@ -37,4 +37,14 @@
         COURSE:
           name: Devops
           trainer: Naveen
+# You can access variable without quotes, however if the variable starting with variable then use double quotes.
+# Variable not starting with value Ex: msg: URL - {{ URL }}
+# Variable starting value Ex: msg: {{ URL }}
 
+    - name: Execute shell command (Access variables Dynamically)
+      ansible.builtin.shell: uptime
+      register: OUT
+
+    - name: Print OUT (Register Output)
+      ansible.builtin.debug:
+        msg: {{OUT}}
