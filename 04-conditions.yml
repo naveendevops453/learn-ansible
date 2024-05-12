@@ -1,0 +1,10 @@
+- name: Conditions
+  hosts: all
+  tasks:
+    - name: Welcome to Devops Course
+      ansible.builtin.debug:
+        msg: Welcome to Devops Course
+
+    - name: Welcome to AWS Course
+      ansible.builtin.debug:
+        msg: Welcome to AWS Course
