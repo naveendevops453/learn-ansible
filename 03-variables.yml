@@ -25,8 +25,9 @@
 
     - name: List Variables
       ansible.builtin.debug:
+        msg: First Fruit Name - {{ FRUITS[0] }}
       vars:
         FRUITS:
           - banana
           - apple
-        msg: First Fruit Name - {{ FRUITS[0] }}
+
