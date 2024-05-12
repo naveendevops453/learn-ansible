@@ -7,3 +7,9 @@
       loop:
         - apple
         - banana
+    - name: Print Course
+      ansible.builtin.debug:
+        msg: Course Name - {{ item["course_name"]}} , Trainer Name - {{ item["trainer_name"]}}
+      loop:
+        - { course_name: Devops, trainer_name: Naveen }
+        - { course_name: AWS, trainer_name: Naveen }
