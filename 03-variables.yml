@@ -30,4 +30,11 @@
         FRUITS:
           - banana
           - apple
+    - name: Map Variables
+      ansible.builtin.debug:
+        msg: Course Name - {{ COURSE["name"] }}, Trainer Name - {{ COURSE["trainer"] }}
+      vars:
+        COURSE:
+          name: Devops
+          trainer: Naveen
 
