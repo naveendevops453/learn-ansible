@@ -1,5 +1,5 @@
 - name: Conditions
-  hosts: all
+  hosts: localhost
   tasks:
     - name: Welcome to Devops Course
       ansible.builtin.debug:
