@@ -18,3 +18,7 @@
     - name: Print PROJECT Name
       ansible.builtin.debug:
         msg: PROJECT_NAME - {{ PROJECT_NAME }}
+
+    - name: Print CLI Variable
+      ansible.builtin.debug:
+        msg: COURSE NAME - {{COURSE_NAME}}
