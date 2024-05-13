@@ -1,0 +1,10 @@
+- name: Error Handling
+  hosts: localhost
+  tasks:
+    - name: Check User
+      ansible.builtin.shell: id expense
+      register: out
+
+    - name: Print Output
+      ansible.builtin.debug:
+        msg: "{{out}}"
